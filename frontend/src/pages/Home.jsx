@@ -1,3 +1,4 @@
+import AboutSection from "../components/home/AboutSection"
 import HeroSection from "../components/home/HeroSection"
 import TestSection from "../components/home/TestSection"
 
@@ -10,6 +11,7 @@ const Home = () => {
             transition-colors duration-300"
         >
             <HeroSection />
+            <AboutSection />
             <TestSection />
         </div>
     )
