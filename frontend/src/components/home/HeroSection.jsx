@@ -2,7 +2,7 @@ import ConsoleLog from "../ConsoleLog";
 
 export default function HeroSection() {
     return (
-        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-evenly px-8 py-20 gap-10 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-evenly px-8 py-20 gap-10 bg-gray-100 dark:bg-neutral-900 transition-colors duration-300">
 
             {/* Conteúdo à esquerda */}
             <div className="max-w-xl text-center">

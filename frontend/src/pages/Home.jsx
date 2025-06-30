@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center 
             bg-gradient-to-br from-white to-gray-400 
-            dark:from-gray-900 dark:to-gray-700 
+            dark:from-gray-900 dark:to-gray-900 
             text-black dark:text-white 
             transition-colors duration-300"
         >
