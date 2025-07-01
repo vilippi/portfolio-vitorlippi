@@ -1,6 +1,11 @@
 'use client';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const projetos = [
     {
@@ -14,7 +19,14 @@ const projetos = [
         nome: "PC Manager",
         descricao: "Aplicativo desktop para controle de computadores com histórico de status.",
         imagem: "/projetos/pcmanager.png",
-        link: "https://github.com/seuuser/pc-manager",
+        link: "https://github.com/vilippi/gerenciador-computadores-v2",
+        demo: "",
+    },
+    {
+        nome: "Clone do Spotify",
+        descricao: "Clone visual do Spotify com player funcional e navegação entre playlists, usando as APIs oficiais.",
+        imagem: "/projetos/dashboard.png",
+        link: "https://github.com/vilippi/clone-spotify",
         demo: "",
     },
     {
@@ -26,9 +38,9 @@ const projetos = [
     },
 ];
 
-export default function ProjectSection() {
+export default function ProjetosSection() {
     return (
-        <section id="projetos" className="w-full min-h-screen py-20 px-6  bg-gray-100 dark:bg-neutral-900">
+        <section id="projetos" className="w-full min-h-screen py-20 px-6 bg-gray-100 dark:bg-neutral-900">
             <div className="max-w-6xl mx-auto">
                 <motion.h2 
                     className="text-3xl font-semibold text-center mb-4 dark:text-white"
@@ -43,12 +55,21 @@ export default function ProjectSection() {
                     Alguns dos projetos que desenvolvi com foco em experiência do usuário e funcionalidade.
                 </p>
 
-                <div className="overflow-x-auto">
-                    <div className="flex gap-6 pb-4 w-max">
-                        {projetos.map((proj, idx) => (
-                            <motion.div 
-                                key={idx}
-                                className="min-w-[300px] max-w-sm bg-white dark:bg-white/5 border dark:border-white/10 rounded-2xl shadow-md overflow-hidden backdrop-blur-md"
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                >
+                    {projetos.map((proj, idx) => (
+                        <SwiperSlide key={idx}>
+                            <motion.div
+                                className="bg-white dark:bg-white/5 border dark:border-white/10 rounded-2xl shadow-md overflow-hidden backdrop-blur-md"
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -74,9 +95,9 @@ export default function ProjectSection() {
                                     </div>
                                 </div>
                             </motion.div>
-                        ))}
-                    </div>
-                </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
     );
