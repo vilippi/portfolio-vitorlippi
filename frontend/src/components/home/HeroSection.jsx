@@ -1,4 +1,7 @@
 import ConsoleLog from "../ConsoleLog";
+import { Github } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { FileDown } from 'lucide-react';
 
 export default function HeroSection() {
     return (
@@ -14,14 +17,40 @@ export default function HeroSection() {
                 <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                     Sou apaixonado por desenvolvimento e estou construindo minha trajetória como desenvolvedor full-stack, unindo teoria e prática em projetos reais enquanto evoluo academicamente e profissionalmente.
                 </p>
-                <a
-                    href="/curriculo.pdf" // você pode trocar isso por uma URL real
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold underline text-black dark:text-white hover:opacity-80"
-                >
-                    Acesse meu currículo
-                </a>
+                <div className="flex gap-4 mt-6 justify-center">
+                    {/* GitHub */}
+                    <a
+                        href="https://github.com/vilippi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                    >
+                        <Github className="w-4 h-4" />
+                        GitHub
+                    </a>
+
+                    {/* LinkedIn */}
+                    <a
+                        href="https://www.linkedin.com/in/vitor-lippi-953240272/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                    >
+                        <Linkedin className="w-4 h-4" />
+                        LinkedIn
+                    </a>
+
+                    {/* Currículo */}
+                    <a
+                        href="/curriculo.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                    >
+                        <FileDown className="w-4 h-4" />
+                        Currículo
+                    </a>
+                </div>
             </div>
 
             {/* Imagem à direita */}
