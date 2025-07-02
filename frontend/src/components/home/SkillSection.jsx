@@ -18,6 +18,10 @@ import { SiPhp } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
 
 
 
@@ -29,9 +33,12 @@ const frontend = [
   { nome: 'React.js', icone: FaReact },
   { nome: 'Next.js', icone: RiNextjsFill },
   { nome: 'Vite', icone: SiVite },
+  { nome: 'Bootstrap', icone: FaBootstrap },
   { nome: 'Tailwind', icone: RiTailwindCssFill },
-  { nome: 'Material UI', icone: SiFramer },
+  { nome: 'Material UI', icone: SiMui },
   { nome: 'Motion', icone: SiFramer },
+  { nome: 'Figma', icone: FaFigma },
+  { nome: 'behance', icone: FaBehance },
 ];
 
 const backend = [
@@ -52,6 +59,7 @@ export default function SkillSection() {
         <h2 className="text-3xl font-bold text-center mb-12">Linguagens e Tecnologias</h2>
 
         <div className="grid md:grid-cols-2 gap-16">
+
           {/* FRONT-END */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-center">Front-End</h3>
@@ -92,6 +100,7 @@ export default function SkillSection() {
                 </motion.div>
               ))}
             </div>
+
           </div>
         </div>
       </div>
