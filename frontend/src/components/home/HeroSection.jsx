@@ -3,6 +3,8 @@ import { Github } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { FileDown } from 'lucide-react';
 
+import { motion } from "framer-motion";
+
 export default function HeroSection() {
     return (
         <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-evenly px-8 py-20 gap-10 bg-gray-100 dark:bg-neutral-900 transition-colors duration-300">
@@ -23,9 +25,11 @@ export default function HeroSection() {
                         href="https://github.com/vilippi"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:brightness-105"
                     >
-                        <Github className="w-4 h-4" />
+                        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <Github className="w-4 h-4" />
+                        </motion.div>
                         GitHub
                     </a>
 
@@ -34,10 +38,12 @@ export default function HeroSection() {
                         href="https://www.linkedin.com/in/vitor-lippi-953240272/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:brightness-105"
                     >
-                        <Linkedin className="w-4 h-4" />
-                        LinkedIn
+                        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <Linkedin className="w-4 h-4" />
+                        </motion.div>
+                        Linkedin
                     </a>
 
                     {/* Currículo */}
@@ -45,10 +51,12 @@ export default function HeroSection() {
                         href="/curriculo.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm hover:shadow-md transition-all"
+                        className="flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-white/10 backdrop-blur-md text-black dark:text-white font-medium shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:brightness-105"
                     >
-                        <FileDown className="w-4 h-4" />
-                        Currículo
+                        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <FileDown className="w-4 h-4" />
+                        </motion.div>
+                        Curriculo
                     </a>
                 </div>
             </div>
