@@ -18,7 +18,6 @@ const Home = () => {
             <SkillSection />
             <ProjectSection />
             <ContactSection />
-            <TestSection />
         </div>
     )
 }
