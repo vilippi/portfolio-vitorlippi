@@ -1,3 +1,31 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Swiper customizado para se adequar ao tema claro/escuro */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000 !important; /* modo claro */
+}
+
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
+    color: #fff !important; /* modo escuro */
+}
+
+.swiper-pagination-bullet {
+    background-color: #d1d5db !important; /* gray-300 */
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important; /* ativo no modo claro */
+}
+
+.dark .swiper-pagination-bullet {
+    background-color: #555 !important; /* bullets modo escuro */
+}
+
+.dark .swiper-pagination-bullet-active {
+    background-color: #fff !important; /* ativo no escuro */
+}
