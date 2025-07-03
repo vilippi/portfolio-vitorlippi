@@ -9,23 +9,23 @@ import 'swiper/css/pagination';
 
 const projetos = [
     {
-        nome: "Sistema de Contratos",
-        descricao: "Gestão de contratos com dashboard, filtros dinâmicos e gráficos interativos.",
-        imagem: "/projetos/contratos.png",
-        link: "https://github.com/seuuser/sistema-contratos",
-        demo: "https://sistema-contratos.vercel.app",
+        nome: "Meu Portfólio",
+        descricao: "Portfólio pessoal com projetos em destaque, foco em frontend moderno e design responsivo.",
+        imagem: "/portfolio/portfolio-1.png",
+        link: "https://github.com/vilippi/portfolio-vitorlippi",
+        demo: "https://portfolio.vercel.app",
     },
     {
         nome: "PC Manager",
-        descricao: "Aplicativo desktop para controle de computadores com histórico de status.",
-        imagem: "/projetos/pcmanager.png",
+        descricao: "Aplicativo desktop para controle de computadores com histórico.",
+        imagem: "/gerenciador-pc/gerenciador-pc-1.png",
         link: "https://github.com/vilippi/gerenciador-computadores-v2",
         demo: "",
     },
     {
         nome: "Clone do Spotify",
         descricao: "Clone visual do Spotify com player funcional e navegação entre playlists, usando as APIs oficiais.",
-        imagem: "/projetos/dashboard.png",
+        imagem: "/clone-spotify/spotify-1.png",
         link: "https://github.com/vilippi/clone-spotify",
         demo: "",
     },
@@ -56,6 +56,7 @@ export default function ProjetosSection() {
                 </p>
 
                 <Swiper
+                    className="pb-10"
                     modules={[Navigation, Pagination]}
                     spaceBetween={30}
                     slidesPerView={1}
@@ -98,6 +99,14 @@ export default function ProjetosSection() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+            </div>
+            <div className="mt-8 text-center">
+                <a
+                    href="/projetos" // ajuste para a rota real da sua página de projetos
+                    className="inline-block px-6 py-2 rounded-xl text-sm font-medium bg-black text-white dark:bg-white dark:text-black hover:opacity-80 transition"
+                >
+                    Ver todos os projetos
+                </a>
             </div>
         </section>
     );

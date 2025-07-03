@@ -13,6 +13,11 @@
     color: #fff !important; /* modo escuro */
 }
 
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
+
 .swiper-pagination-bullet {
     background-color: #d1d5db !important; /* gray-300 */
     opacity: 1;
