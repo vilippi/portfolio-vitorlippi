@@ -1,9 +1,35 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useState } from 'react';
 import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi'
 
 export default function ContactSection() {
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "0ce7354e-f5fd-49d4-95b6-b27db92eefac");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Email enviado com Sucesso!");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
     return (
         <section id="contato" className="w-full min-h-screen px-6 py-20 bg-gray-100 dark:bg-neutral-900">
             <div className="max-w-3xl mx-auto">
@@ -21,19 +47,22 @@ export default function ContactSection() {
                 </p>
 
                 {/* Formulário */}
-                <form className="flex flex-col gap-4">
+                <form onSubmit={onSubmit} className="flex flex-col gap-4">
                     <input
                         type="text"
+                        name="name"
                         placeholder="Seu nome"
                         className="px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-transparent text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <input
                         type="email"
+                        name="email"
                         placeholder="Seu email"
                         className="px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-transparent text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <textarea
                         rows={5}
+                        name="message"
                         placeholder="Sua mensagem"
                         className="px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-transparent text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
