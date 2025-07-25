@@ -12,15 +12,6 @@ Este é um projeto de portfólio profissional, com uma estética inspirada no de
 - **Dark Mode** (Alternância entre tema claro e escuro)
 - **Context API** (Gerenciamento de tema e outros estados globais)
 
-## 📁 Estrutura do Projeto
-
-📂 src
-┣ 📂 pages
-┃ ┗ 📄 Home.jsx
-┣ 📂 components
-┃ ┗ 📂 home (Sections)
-┗ 📂 assets
-
 ## ✨ Funcionalidades
 
 - Home com introdução profissional
@@ -29,6 +20,3 @@ Este é um projeto de portfólio profissional, com uma estética inspirada no de
 - Sessão de contato com links para currículo, GitHub e LinkedIn
 - Tema claro/escuro com persistência local
 
-## 📸 Demonstração
-
-> Em breve uma versão hospedada estará disponível no Vercel.
