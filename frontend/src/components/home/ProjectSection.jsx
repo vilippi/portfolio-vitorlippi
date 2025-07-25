@@ -29,13 +29,20 @@ const projetos = [
         link: "https://github.com/vilippi/clone-spotify",
         demo: "",
     },
-    {
-        nome: "Dashboard Clientes",
-        descricao: "Dashboard interativo com dados filtráveis por estado e serviço contratado.",
-        imagem: "/projetos/dashboard.png",
-        link: "https://github.com/seuuser/dashboard-clientes",
-        demo: "",
-    },
+    // {
+    //     nome: "Clone do Instagram",
+    //     descricao: "Clone visual e funcional do Instagram.",
+    //     imagem: "",
+    //     link: "",
+    //     demo: "",
+    // },
+    // {
+    //     nome: "CDO",
+    //     descricao: "Site com informações e venda produtos para uma igreja.",
+    //     imagem: "",
+    //     link: "",
+    //     demo: "",
+    // },
 ];
 
 export default function ProjetosSection() {
@@ -102,7 +109,7 @@ export default function ProjetosSection() {
             </div>
             <div className="mt-8 text-center">
                 <a
-                    href="/projetos" // ajuste para a rota real da sua página de projetos
+                    href="https://github.com/vilippi?tab=repositories" // ajuste para a rota real da sua página de projetos
                     className="inline-block px-6 py-2 rounded-xl text-sm font-medium bg-black text-white dark:bg-white dark:text-black hover:opacity-80 transition"
                 >
                     Ver todos os projetos
