@@ -4,7 +4,7 @@ Este é um projeto de portfólio profissional, com uma estética inspirada no de
 
 ## 🚀 Tecnologias Utilizadas
 
-- **React.js** com **Vite** (Framework principal)
+- **React.js** com **Vite** (Bundler principal)
 - **Tailwind CSS** (Estilização moderna e responsiva)
 - **Framer Motion** (Animações suaves e interativas)
 - **React Icons** (Ícones modernos e acessíveis)
@@ -24,28 +24,11 @@ Este é um projeto de portfólio profissional, com uma estética inspirada no de
 ## ✨ Funcionalidades
 
 - Home com introdução profissional
-- Apresentação de projetos com design minimalista iOS
+- Apresentação de projetos com design minimalista no estilo IOS
 - Sessão de linguagens e tecnologias com animação interativa
 - Sessão de contato com links para currículo, GitHub e LinkedIn
-- Página de cadastro e edição de clientes com integração AWS S3 (upload de logo e termos)
-- Dashboard interativa com filtros dinâmicos e dados simulados
 - Tema claro/escuro com persistência local
 
 ## 📸 Demonstração
 
 > Em breve uma versão hospedada estará disponível no Vercel.
-
-## 🛠️ Como Rodar Localmente
-
-```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/portfolio-limpezas.git
-
-# Acesse a pasta
-cd frontend
-
-# Instale as dependências
-npm install
-
-# Rode o servidor de desenvolvimento
-npm run dev
