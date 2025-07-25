@@ -2,6 +2,7 @@ import ConsoleLog from "../ConsoleLog";
 import { Github } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { FileDown } from 'lucide-react';
+import emojivitor from '../../assets/emojivitor.webp';
 
 import { motion } from "framer-motion";
 
@@ -62,11 +63,11 @@ export default function HeroSection() {
             </div>
 
             {/* Imagem à direita */}
-            <div className="w-64 h-64">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden">
                 <img
-                    src="/bunny-dev.png" // substitua pelo caminho correto
-                    alt="Bunny Developer"
-                    className="w-full h-full object-contain rounded-full shadow-lg"
+                    src={emojivitor}
+                    alt="Emoji Vitor Lippi"
+                    className="absolute bottom-0 w-full"
                 />
             </div>
 
