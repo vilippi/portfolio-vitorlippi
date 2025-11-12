@@ -22,6 +22,10 @@ import { FaFigma } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
+import { FaPhoenixFramework } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
+import { SiDbeaver } from "react-icons/si";
+import { SiSwagger } from "react-icons/si";
 
 
 
@@ -44,17 +48,21 @@ const frontend = [
 const backend = [
   { nome: 'Node.js', icone: FaNodeJs },
   { nome: 'Python', icone: FaPython },
+  { nome: 'FastApi', icone: SiFastapi },
   { nome: 'MongoDB', icone: SiMongodb },
   { nome: 'Firebase', icone: IoLogoFirebase },
   { nome: 'MySQL', icone: GrMysql },
   { nome: 'PHP', icone: SiPhp },
   { nome: 'Postman', icone: SiPostman },
   { nome: 'Docker', icone: FaDocker },
+  { nome: 'FireBird', icone: FaPhoenixFramework },
+  { nome: 'DBeaver', icone: SiDbeaver },
+  { nome: 'Swagger', icone: SiSwagger },
 ];
 
 export default function SkillSection() {
   return (
-    <section className="w-full min-h-screen py-20 px-6 bg-gray-100 dark:bg-neutral-900 text-black dark:text-white">
+    <section id="habilidades" className="w-full min-h-screen py-20 px-6 bg-gray-100 dark:bg-neutral-900 text-black dark:text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Linguagens e Tecnologias</h2>
 

@@ -9,11 +9,11 @@ import 'swiper/css/pagination';
 
 const projetos = [
     {
-        nome: "Meu Portfólio",
-        descricao: "Portfólio pessoal com projetos em destaque, foco em frontend moderno e design responsivo.",
-        imagem: "./portfolio/portfolio-1.png",
-        link: "https://github.com/vilippi/portfolio-vitorlippi",
-        demo: "https://portfolio.vercel.app",
+        nome: "ReUse",
+        descricao: "Web App Ecommerce com foco em produtos ecológicos",
+        imagem: "./reuse/reuse.jpg",
+        link: "https://github.com/vilippi/ReUse",
+        demo: "",
     },
     {
         nome: "PC Manager",
@@ -29,13 +29,13 @@ const projetos = [
         link: "https://github.com/vilippi/clone-spotify",
         demo: "",
     },
-    // {
-    //     nome: "Clone do Instagram",
-    //     descricao: "Clone visual e funcional do Instagram.",
-    //     imagem: "",
-    //     link: "",
-    //     demo: "",
-    // },
+    {
+        nome: "Meu Portfólio",
+        descricao: "Portfólio pessoal com projetos em destaque, foco em frontend moderno e design responsivo.",
+        imagem: "./portfolio/portfolio-1.png",
+        link: "https://github.com/vilippi/portfolio-vitorlippi",
+        demo: "https://portfolio.vercel.app",
+    },
     // {
     //     nome: "CDO",
     //     descricao: "Site com informações e venda produtos para uma igreja.",

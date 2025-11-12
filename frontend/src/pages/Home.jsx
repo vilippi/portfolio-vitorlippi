@@ -3,7 +3,6 @@ import ContactSection from "../components/home/ContactSection"
 import HeroSection from "../components/home/HeroSection"
 import ProjectSection from "../components/home/ProjectSection"
 import SkillSection from "../components/home/SkillSection"
-import TestSection from "../components/home/TestSection"
 
 const Home = () => {
     return (

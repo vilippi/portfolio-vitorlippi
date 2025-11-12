@@ -3,7 +3,8 @@ import wallpaper from '../../assets/wallpaper.jpg';
 
 export default function AboutSection() {
     return (
-        <section 
+        <section
+            id="sobremim"
             className="w-full min-h-screen flex flex-col md:flex-row items-center justify-evenly px-8 py-20 gap-10 bg-cover bg-center bg-no-repeat dark:bg-black transition-colors duration-300"
             style={{ backgroundImage: `url(${wallpaper})` }}
         >
@@ -30,12 +31,15 @@ export default function AboutSection() {
                         Sobre mim
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                        Sou um desenvolvedor fullstack focado em criar soluções eficientes e bem estruturadas. 
-                        Tenho uma base sólida em lógica de programação, venho aplicando esses conhecimentos em projetos práticos que envolvem desde APIs até interfaces modernas.
+                        Sou desenvolvedor fullstack e gosto de construir aplicações modernas de ponta a ponta. Trabalho principalmente com React/Next.js e Tailwind CSS no frontend, e também desenvolvo APIs e serviços no backend com foco em Python. 
+                        Já atuei em projetos que vão desde painéis internos e dashboards até apps desktop com Electron. Na SoftPark, desenvolvi módulos internos fullstack, desde o frontend em Next.js até as APIs em Python/Docker. 
+                        <br />
+                        Sempre buscando código claro, componentização e boa experiência do usuário.
                     </p>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                        Trabalho com React, Tailwind CSS, Node.js, Electron e bancos de dados como MongoDB e PostgreSQL. 
-                        Tenho experiência desenvolvendo dashboards, sistemas internos, CRUDs otimizados e integração com APIs REST, sempre priorizando performance, clareza no código e uma ótima experiência para o usuário.
+                        Tenho foco em UX, priorizo interfaces limpas, responsivas e com feedbacks claros. 
+                        Sou adaptável e me integro rápido ao stack e aos processos do time. 
+                        Mantenho estudo contínuo em arquitetura, performance e boas práticas para entregar código cada vez mais simples, legível e fácil de manter.
                     </p>
                 </div>
             </div>
